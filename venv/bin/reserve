@@ -1,0 +1,4 @@
+#!/home/dangth/PycharmProjects/blogdjango/venv/bin/python
+import sys
+from reserve import main
+sys.exit(main(sys.argv))

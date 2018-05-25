@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% block title %}
+    <title>New Post</title>
+{% endblock %}
+{% block content %}
+    <h1>New post</h1>
+    <form class="post-form" method="post">
+        {% csrf_token %}
+        {{form.as_p }}
+        <button type="submit" class="save btn btn-default" name="button">Save</button>
+    </form>
+
+    <script>
+        CKEDITOR.replace( 'text');
+		</script>
+{% endblock %}
